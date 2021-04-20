@@ -20,7 +20,7 @@
 
     <!--------------navbar------------------->
     <header>
-        <nav  class="navbar navbar-expand-lg navbar-light" style="background-color: #869892;">
+        <nav  class="navbar navbar-expand-lg navbar-light bg-custom">
             <a class="navbar-brand" href="#"><img src="assets/media/surf brand.png" alt="logo" width="40px" height="40px">Surf's Up Ireland</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,17 +58,20 @@
       </div>
 
     <!---------------Map section /locations-------------->
+<div class="map-landing">
+    <div id="map"></div>
 
-    <div>google maps and selectable content</div>
+    <p>maps section</p>
+</div>
 
 
 
 
-    <div>contact form here with background image.</div>
 
     <!---------------Contact page-------------->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reiciendis explicabo quam illo est inventore magnam
-        dicta culpa esse possimus? Veniam in nulla rem incidunt, inventore quas nemo voluptatibus laboriosam.</p>
+    <div class="contact-landing">
+        <div>contact form here with background image.</div>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reiciendis explicabo quam illo est inventore magnam
             dicta culpa esse possimus? Veniam in nulla rem incidunt, inventore quas nemo voluptatibus laboriosam.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reiciendis explicabo quam illo est inventore magnam
@@ -83,16 +86,22 @@
                                 dicta culpa esse possimus? Veniam in nulla rem incidunt, inventore quas nemo voluptatibus laboriosam.</p>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reiciendis explicabo quam illo est inventore magnam
                                     dicta culpa esse possimus? Veniam in nulla rem incidunt, inventore quas nemo voluptatibus laboriosam.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reiciendis explicabo quam illo est inventore magnam
-                                        dicta culpa esse possimus? Veniam in nulla rem incidunt, inventore quas nemo voluptatibus laboriosam.</p>
+ 
 
-
+    </div>
     <div>Footer</div>
 
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbgCecfOgNaXFlfL2FEn4GY0nBcd_2Yfs&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
+
+    
+
 </body>
 
 </html>
