@@ -1,50 +1,81 @@
+//Add Google Maps
+
 function initMap() {
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 3,
-      center: { lat: -28.024, lng: 140.887 },
-    });
-    // Create an array of alphabetical characters used to label the markers.
-    const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    // Add some markers to the map.
-    // Note: The code uses the JavaScript Array.prototype.map() method to
-    // create an array of markers based on a given "locations" array.
-    // The map() method here has nothing to do with the Google Maps API.
-    const markers = locations.map((location, i) => {
-      return new google.maps.Marker({
-        position: location,
-        label: labels[i % labels.length],
+  const options = {
+    center: { 
+      lat: 36.1783653, 
+      lng: 135.0709152 
+    },
+    zoom: 4
+  };
+  
+  //New map
+  const map = new
+  google.maps.Map(document.getElementById('map'), options);
+
+  //Create markers
+   
+  const markers = [{
+      coordinates: {
+        lat: 35.2326407,
+        lng: 139.013563
+      },
+      content: '<h5>beach</h5>',
+      info: `<p>aaaa</p>`
+    },
+    {
+      
+      coordinates: {
+        lat: 43.5655079, 
+        lng: 144.3598874
+      }, 
+      content: '<h5>beach</h5>',
+      info: `<p>bbbbbbb</p>`
+    } 
+  ];
+
+  //Loop through markers 
+  for (var i = 0; i < markers.length; i++) {
+    addMarker(markers[i]);
+  }
+
+  // Marker function
+  function addMarker(props) {
+    const marker = new google.maps.Marker({
+    position: props.coordinates,
+    map: map,
+  });
+
+    if(props.content) {
+      const infowindow = new google.maps.InfoWindow ({
+        content:props.content
+      });
+
+      // Open info window when clicked on the marker
+      google.maps.event.addListener(marker, 'click', function() {
+        if(!marker.open) {
+          infowindow.open(map, marker);
+          marker.open = true;
+        }
+        // Close info window when clicked on the marker
+        else {
+          infowindow.close();
+          marker.open = false;
+        }
+        // Close info window when clicked anywhere on the map and the info window was opened
+        google.maps.event.addListener(map, 'click', function() {
+          infowindow.close();
+          marker.open = false;
       });
     });
-    // Add a marker clusterer to manage the markers.
-    new MarkerClusterer(map, markers, {
-      imagePath:
-        "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-    });
-  }
-  const locations = [
-    { lat: -31.56391, lng: 147.154312 },
-    { lat: -33.718234, lng: 150.363181 },
-    { lat: -33.727111, lng: 150.371124 },
-    { lat: -33.848588, lng: 151.209834 },
-    { lat: -33.851702, lng: 151.216968 },
-    { lat: -34.671264, lng: 150.863657 },
-    { lat: -35.304724, lng: 148.662905 },
-    { lat: -36.817685, lng: 175.699196 },
-    { lat: -36.828611, lng: 175.790222 },
-    { lat: -37.75, lng: 145.116667 },
-    { lat: -37.759859, lng: 145.128708 },
-    { lat: -37.765015, lng: 145.133858 },
-    { lat: -37.770104, lng: 145.143299 },
-    { lat: -37.7737, lng: 145.145187 },
-    { lat: -37.774785, lng: 145.137978 },
-    { lat: -37.819616, lng: 144.968119 },
-    { lat: -38.330766, lng: 144.695692 },
-    { lat: -39.927193, lng: 175.053218 },
-    { lat: -41.330162, lng: 174.865694 },
-    { lat: -42.734358, lng: 147.439506 },
-    { lat: -42.734358, lng: 147.501315 },
-    { lat: -42.735258, lng: 147.438 },
-    { lat: -43.999792, lng: 170.463352 },
-  ];
-  
 
+      // Info shows in the side column when the marker is clicked
+      google.maps.event.addListener(marker, 'click',  (function(i) {
+
+        return function() {
+          document.getElementById('map-content').innerHTML = markers[i].info;
+        };
+      })(i));
+    }
+  }
+}
