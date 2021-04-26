@@ -1,8 +1,7 @@
-:root {
-    margin: 0;
+
 
 }
-
+html,
 body {
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -62,16 +61,19 @@ body {
 
 
 .footer-bg {
-    background-color:#eb947e;  
+    background-color:#eb947e;
+    height: 10vh;  
+    position: relative;
 }  
 
 .fab {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
+    
+    padding: 10px 15px;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    border-radius: 15%;
+    
   }
   
   .fab:hover {
@@ -80,20 +82,25 @@ body {
 
   .footer-icons {
       left: -10px;
+      top: 3vh;
   }
 
-  .fa-facebook-square {
+  .fa-facebook-f {
+    background: #3B5998;
+    color: white;
+       }
 
- }
-
-  .fa-twitter-square {
-
+  .fa-twitter {
+    background: #55ACEE;
+  color: white;
   }
 
-  .fa-youtube-square {
-
+  .fa-youtube {
+    background: #bb0000;
+  color: white;
   }
 
-  .fa-instagram-square {
-
+  .fa-instagram {
+    background: #125688;
+    color: white;
   }
