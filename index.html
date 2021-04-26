@@ -49,14 +49,14 @@
 
     <!---------------Landing page-------------->
     <section>
-    <div id="hero-page" class="hero-image">
-        <div class="hero-text">
-            <h1>Something here</h1>
-            <p>short intro</p>
-            <button>Lets go</button>
+        <div id="hero-page" class="hero-image">
+            <div class="hero-text">
+                <h1>Something here</h1>
+                <p>short intro</p>
+                <button>Lets go</button>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!---------------Map section /locations-------------->
     <section id="map-page" class="map-landing ">
@@ -66,70 +66,88 @@
                 <div class="col">
                     <div id="map"></div>
                 </div>
+
+                <div class="col map-content">
+                    <h3>lahinch beach</h3>
+                    <p>Lahinch is a sandy, crescent-shaped beach, by the resort town of Lahinch in Liscannor Bay on the
+                        north west coast of County Clare. The beach directly faces the Atlantic Ocean, meaning it gets
+                        the full force of the swells. As a result Lahinch is one of Ireland’s most popular surfing
+                        beaches.</p>
+                        <div>
+                        <img src="assets/media/beach images/lahinch.jpg" alt="beach" width="500" height="250">
+                        </div>
+                        <ul>
+                            <li>beach rating  - good</li>
+                            <li>surf school - yes, multiple</li>
+                            <li>life guard - yes, seasonal</li>
+                            <li>surf difficulty - novice</li>
+                            <li>surf break - beach</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col">
-                  <div id="map-content"></div>
-                  map content
+                    <div id="map-partners"></div>
+                    surf school links. and other stuff
                 </div>
-             </div>
-             <div class="row">
-                <div  class="col">
-                  <div id="map-partners"></div>
-                  surf school links. and other stuff
-                </div>
-             </div>
-        </div> 
+            </div>
+        </div>
     </section>
 
     <!---------------Contact page-------------->
-<section>
-    <div id="contact-page" class="container-fluid" style="background: url('assets/media/surf-end-of-day.jpg'); height: 90vh; background-position: center; background-size: cover; background-repeat: no-repeat;"> 
-        <div class="row">
-            <div class="col">
-             1/1
+    <section>
+        <div id="contact-page" class="container-fluid"
+            style="background: url('assets/media/surf-end-of-day.jpg'); height: 90vh; background-position: center; background-size: cover; background-repeat: no-repeat;">
+            <div class="row">
+                <div class="col">
+                    1/1
+                </div>
+                <div class="col">2/2</div>
             </div>
-            <div class="col">2/2</div>
+        </div>
+    </section>
+
+    <!---------------footer--------------------------->
+
+
+    <div class="container-fluid footer-bg">
+        <div class="row">
+            <div class="col text-center footer-icons">
+                <a href="https://www.facebook.com" target="_blank" aria-label="facebook" rel="noopener"><i
+                        class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="col text-center footer-icons">
+                <a href="https://www.twitter.com" target="_blank" aria-label="twitter" rel="noopener"><i
+                        class="fab fa-twitter"></i></a>
+            </div>
+            <div class="col text-center footer-icons">
+                <a href="https://www.youtube.com" target="_blank" aria-label="youtube" rel="noopener"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+            <div class="col text-center footer-icons">
+                <a href="https://www.instagram.com" target="_blank" aria-label="instagram" rel="noopener"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </div>
-</section>
 
-<!---------------footer--------------------------->
-
-
-<div class="container-fluid footer-bg">
-    <div class="row">
-        <div class="col text-center footer-icons">
-            <a href="https://www.facebook.com" target="_blank" aria-label="facebook" rel="noopener"><i
-                class="fab fa-facebook-f"></i></a>       
-        </div>
-        <div class="col text-center footer-icons">
-            <a href="https://www.twitter.com" target="_blank" aria-label="twitter" rel="noopener"><i
-            class="fab fa-twitter"></i></a>
-        </div>
-        <div class="col text-center footer-icons">
-            <a href="https://www.youtube.com" target="_blank" aria-label="youtube"
-            rel="noopener"><i class="fab fa-youtube"></i></a>
-        </div>
-        <div class="col text-center footer-icons">
-            <a href="https://www.instagram.com" target="_blank" aria-label="instagram" rel="noopener"><i
-            class="fab fa-instagram"></i></a>
-        </div>
-    </div>
-</div>
-
-<!-------footer end ----------------------------->
+    <!-------footer end ----------------------------->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbgCecfOgNaXFlfL2FEn4GY0nBcd_2Yfs&callback=initMap"></script>  
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbgCecfOgNaXFlfL2FEn4GY0nBcd_2Yfs&callback=initMap">
+    </script>
     <script src="assets/js/locations.js"></script>
     <script src="assets/js/maps.js"></script>
     <script src="assets/js/main.js"></script>
-    
-    
-    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script> <!-- remove if cant cluster-->
+
+
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <!-- remove if cant cluster-->
 </body>
 
 </html>

@@ -1,22 +1,22 @@
-
-
-}
-html,
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
+
+
 /*--------------------------------nav bar---------------------*/
 .navbar {
     min-height: 8vh;
-    
 }
 
-.bg-custom{
-    background-image: linear-gradient(90deg, rgba(78,117,98,1) 4%, rgba(219,219,219,1) 85%);
+.bg-custom {
+    background-image: linear-gradient(90deg, rgba(78, 117, 98, 1) 4%, rgba(219, 219, 219, 1) 85%);
 
 
     /*--------------------------------landing page---------------------*/
-    
+
 }
 
 .hero-image {
@@ -28,79 +28,78 @@ body {
     position: relative;
 }
 
-
-
 .hero-text {
     text-align: center;
     justify-content: center;
 }
 
+.hero-text p {
+    color: red;
+
+}
+
 /*--------------------------------map sections---------------------*/
 
-.map-landing { 
-    
-    cursor:pointer;
- }
+.map-landing {
+    cursor: pointer;
+}
 
 #map {
     height: 70vh;
-    width: 50vw;
     margin: 20px;
 }
-
- #map-partners
 
 /*--------------------------------contact---------------------*/
 .contact-bg-img {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    }
+}
 
 /*--------------------------------Footer---------------------*/
 
 
 .footer-bg {
-    background-color:#eb947e;
-    height: 10vh;  
+    background-color: #eb947e;
+    height: 10vh;
     position: relative;
-}  
+}
 
 .fab {
-    
+
     padding: 10px 15px;
     font-size: 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 15%;
-    
-  }
-  
-  .fab:hover {
-      opacity: 0.7;
-  }
 
-  .footer-icons {
-      left: -10px;
-      top: 3vh;
-  }
+}
 
-  .fa-facebook-f {
+.fab:hover {
+    opacity: 0.7;
+}
+
+.footer-icons {
+    left: -10px;
+    top: 3vh;
+}
+
+.fa-facebook-f {
     background: #3B5998;
     color: white;
-       }
+}
 
-  .fa-twitter {
+.fa-twitter {
     background: #55ACEE;
-  color: white;
-  }
+    color: white;
+}
 
-  .fa-youtube {
+.fa-youtube {
     background: #bb0000;
-  color: white;
-  }
+    color: white;
+}
 
-  .fa-instagram {
+.fa-instagram {
     background: #125688;
     color: white;
-  }
+}
