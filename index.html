@@ -9,9 +9,12 @@
     <meta name="keywords" content="Surfing, Wind surfing, Beaches, body boarding, surf lessons">
     <meta name="author" content="Vincent Nolan">
 
+
+     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="" type="text/css" />
+    
     <title>Surfs Up Ireland</title>
     <link rel="shortcut icon" type="image/jpg" href="assets/media/icons8-surf-50.png" />
     <!-- reminder.  get a better favicon -->
@@ -23,7 +26,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-custom">
             <a class="navbar-brand" href="#"><img src="assets/media/surf brand.png" alt="logo" width="40px"
-                    height="40px">Surf's Up Ireland</a>
+                    height="40px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -60,23 +63,22 @@
 
     <!---------------Map section /locations-------------->
     <section id="map-page" class="map-landing ">
-
-        <div class="container-fluid" id="map-snap">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col">
                     <div id="map"></div>
                 </div>
 
                 <div class="col map-content">
-                    <h3>lahinch beach</h3>
+                    <h5>lahinch beach</h5>
                     <p>Lahinch is a sandy, crescent-shaped beach, by the resort town of Lahinch in Liscannor Bay on the
                         north west coast of County Clare. The beach directly faces the Atlantic Ocean, meaning it gets
                         the full force of the swells. As a result Lahinch is one of Ireland’s most popular surfing
                         beaches.</p>
-                        <div>
-                        <img src="assets/media/beach images/lahinch.jpg" alt="beach" width="500" height="250">
-                        </div>
-                        <ul>
+                        
+                        <div class="beach-images"><img src="assets/media/beach images/lahinch.jpg" alt="beach"></div>
+                         <h6>information</h6>                   
+                        <ul class="map-content-features">
                             <li>beach rating  - good</li>
                             <li>surf school - yes, multiple</li>
                             <li>life guard - yes, seasonal</li>
@@ -85,11 +87,23 @@
                         </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div id="map-partners"></div>
-                    surf school links. and other stuff
+            <div class="row surf-partners-main">
+                <div class="col text-center surf-partners">
+                    <a href="https://www.epa.ie/" target="_blank" rel="noopener"><img src="assets/media/partners/epa-ireland.jpg" alt="enviromental protection agency ireland"></a>
                 </div>
+                <div class="col text-center surf-partners">
+                    <a href="https://www.epa.ie/" target="_blank" rel="noopener"><img src="assets/media/partners/watersafety-ie.png" alt="enviromental protection agency ireland"></a>
+                </div>
+                <div class="col text-center surf-partners-wide">
+                    <a href="https://www.epa.ie/" target="_blank" rel="noopener"><img src="assets/media/partners/Beaches-ie.jpg" alt="enviromental protection agency ireland"></a>
+                </div>
+                <div class="col text-center surf-partners">
+                    <a href="https://www.epa.ie/" target="_blank" rel="noopener"><img src="assets/media/partners/irish-surfing.jpg" alt="enviromental protection agency ireland"></a>
+                </div>
+                <div class="col text-center surf-partners">
+                    <a href="https://www.epa.ie/" target="_blank" rel="noopener"><img src="assets/media/partners/surfforecast.jpg" alt="enviromental protection agency ireland"></a>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -100,7 +114,7 @@
             style="background: url('assets/media/surf-end-of-day.jpg'); height: 90vh; background-position: center; background-size: cover; background-repeat: no-repeat;">
             <div class="row">
                 <div class="col">
-                    1/1
+                    one
                 </div>
                 <div class="col">2/2</div>
             </div>
@@ -141,13 +155,12 @@
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbgCecfOgNaXFlfL2FEn4GY0nBcd_2Yfs&callback=initMap">
     </script>
-    <script src="assets/js/locations.js"></script>
+    
     <script src="assets/js/maps.js"></script>
     <script src="assets/js/main.js"></script>
 
 
-    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-    <!-- remove if cant cluster-->
+    
 </body>
 
 </html>

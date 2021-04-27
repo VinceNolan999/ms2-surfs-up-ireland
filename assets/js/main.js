@@ -20,3 +20,8 @@ function clickHandler(e) {
     behavior: "smooth"
   });
 }
+
+
+$('.nav-link').on('click',function() {
+  $('.navbar-collapse').collapse('hide');
+});

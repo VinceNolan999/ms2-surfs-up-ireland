@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+
 body {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
 }
 
 
 /*--------------------------------nav bar---------------------*/
 .navbar {
     min-height: 8vh;
+
 }
 
 .bg-custom {
@@ -16,6 +18,7 @@ body {
 
 
     /*--------------------------------landing page---------------------*/
+
 
 }
 
@@ -31,13 +34,7 @@ body {
 .hero-text {
     text-align: center;
     justify-content: center;
-}
-
-.hero-text p {
-    color: red;
-
-}
-
+    }
 /*--------------------------------map sections---------------------*/
 
 .map-landing {
@@ -46,7 +43,61 @@ body {
 
 #map {
     height: 70vh;
-    margin: 20px;
+    min-width: 300px;
+    margin-top: 10px;
+    border-radius: 8px;
+    
+}
+
+.map-content {
+    margin: 10px 15px 10px 15px;
+    padding: 30px;
+    border: 0.1rem solid black;
+    border-radius: 8px;
+    line-height: 1.1;
+    }
+
+.beach-images{
+    text-align: center;
+}
+
+.map-content img {
+    border-radius: 8px;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+
+.map-content h5, h6 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5px;
+    
+}
+
+.map-content p {
+    text-align:center;
+}
+
+.map-content ul {
+    
+    text-transform: capitalize;
+}
+.surf-partners-main {
+    margin: 10px;
+}
+
+.surf-partners img {
+    width: 120px;
+    height: 120px;
+    padding: 2px;
+}
+
+.surf-partners-wide img {
+    width: 180px;
+    height: 120px;
+    padding: 2px;
 }
 
 /*--------------------------------contact---------------------*/
@@ -67,7 +118,7 @@ body {
 
 .fab {
 
-    padding: 10px 15px;
+    padding: 7px 12px;
     font-size: 20px;
     text-align: center;
     text-decoration: none;
