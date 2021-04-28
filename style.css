@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Scope+One&display=swap');
 
 html,
 body {
@@ -6,39 +6,63 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'DM Sans', sans-serif;
+    
 }
 
 /*--------------------------------nav bar---------------------*/
 .navbar {
     min-height: 8vh;
-
 }
 
+.navbar-brand span {
+    font-size: 10px;
+    margin-left: 10px;
+}
 .bg-custom {
     background-image: linear-gradient(90deg, rgba(78, 117, 98, 1) 4%, rgba(219, 219, 219, 1) 85%);
+    
 
 }
 
 /*--------------------------------landing page---------------------*/
 
 .hero-image {
-    background-image: url(assets/media/surf1.jpg);
+    background: url(assets/media/surf1.jpg);
     height: 92vh;
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    
 }
 
 .hero-text {
+    margin: auto;
+    width: 60%;
     text-align: center;
-    justify-content: center;
+    padding-top: 5%;
+    
+    
+}
+
+.hero-text h1 {
+    font-family: 'Scope One';
+    font-size: 300%;
+    padding-top: 5%;
+    text-transform: capitalize;
+}
+
+.hero-text p {
+    font-weight: lighter ;
 }
 
 /*--------------------------------map sections---------------------*/
 
 .map-landing {
     cursor: pointer;
+    background: #fafafa;
+
+
 }
 
 #map {
@@ -59,14 +83,16 @@ body {
 
 .beach-images {
     text-align: center;
+    
 }
 
-.map-content img {
+.beach-images img {
     border-radius: 8px;
     max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+        
 }
 
 .map-content h5,
