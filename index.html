@@ -14,10 +14,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="style.css" type="text/css" />
+
+   
     
     <title>Surfs Up Ireland</title>
     <link rel="shortcut icon" type="image/jpg" href="assets/media/icons8-surf-50.png" />
     <!-- reminder.  get a better favicon -->
+
+    
 </head>
 
 <body>
@@ -113,10 +117,18 @@
         <div id="contact-page" class="container-fluid"
             style="background: url('assets/media/surf-end-of-day.jpg'); height: 90vh; background-position: center; background-size: cover; background-repeat: no-repeat;">
             <div class="row">
-                <div class="col">
-                    one
+                <div class="contact-top">
+                    <h4>We would love to hear from you!</h4>
                 </div>
-                <div class="col">2/2</div>
+                <div class="main-form">
+                    <form id="myform" onsubmit="return sendMail (this);"> 
+                <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
+                <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+                </form>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -155,12 +167,15 @@
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbgCecfOgNaXFlfL2FEn4GY0nBcd_2Yfs&callback=initMap">
     </script>
+
     
     <script src="assets/js/maps.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <script src="assets/js/contact.js"></script>
+    
 
     
+
 </body>
 
 </html>

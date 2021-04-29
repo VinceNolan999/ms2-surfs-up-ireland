@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Scope+One&display=swap');
 
-html,
+
 body {
     height: 100%;
     padding: 0;
     margin: 0;
     font-family: 'DM Sans', sans-serif;
+    background: url('johny-goerend-XWWKKdG4Arg-unsplash.jpg');
+    background-attachment: fixed;
+    background-size: cover;
     
 }
+  
 
 /*--------------------------------nav bar---------------------*/
 .navbar {
@@ -60,7 +64,7 @@ body {
 
 .map-landing {
     cursor: pointer;
-    background: #fafafa;
+    
 
 
 }
@@ -139,7 +143,7 @@ h6 {
 
 
 .footer-bg {
-    background-color: #f5c6be;
+    background-color: #ecaf9c;
     height: 10vh;
     position: relative;
 }

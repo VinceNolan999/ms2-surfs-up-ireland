@@ -11,14 +11,14 @@ for (const link of links) {
 }
  
 function clickHandler(e) {
-  e.preventDefault();
+e.preventDefault();
   const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
+ const offsetTop = document.querySelector(href).offsetTop;
  
-  scroll({
+ scroll({
     top: offsetTop,
     behavior: "smooth"
-  });
+ });
 }
 
 
