@@ -8,19 +8,21 @@
     <meta name="Description" content="Free location finder for surfing in Ireland">
     <meta name="keywords" content="Surfing, Wind surfing, Beaches, body boarding, surf lessons">
     <meta name="author" content="Vincent Nolan">
-
-
      
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="style.css" type="text/css" />
 
-   
-    
     <title>Surfs Up Ireland</title>
     <link rel="shortcut icon" type="image/jpg" href="assets/media/icons8-surf-50.png" />
     <!-- reminder.  get a better favicon -->
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_Hy4SPlgkUYaiZnEkEu7D3");
+    })();
+    </script>
     
 </head>
 
@@ -121,12 +123,26 @@
                     <h4>We would love to hear from you!</h4>
                 </div>
                 <div class="main-form">
-                    <form id="myform" onsubmit="return sendMail (this);"> 
-                <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-                <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-                <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
-                <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
-                </form>
+                    <form id="form">
+                        <div class="field">
+                          <label for="from_fname">from_fname</label>
+                          <input type="text" name="from_fname" id="from_fname">
+                        </div>
+                        <div class="field">
+                          <label for="from_lname">from_lname</label>
+                          <input type="text" name="from_lname" id="from_lname">
+                        </div>
+                        <div class="field">
+                          <label for="from_email">from_email</label>
+                          <input type="text" name="from_email" id="from_email">
+                        </div>
+                        <div class="field">
+                          <label for="message">message</label>
+                          <input type="text" name="message" id="message">
+                        </div>
+                      
+                        <input type="submit" id="button" value="Send Email" >
+                      </form>
                 </div>
                 
             </div>

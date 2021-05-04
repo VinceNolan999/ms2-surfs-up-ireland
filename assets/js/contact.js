@@ -1,24 +1,20 @@
+const btn = document.getElementById('button');
 
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
+   btn.value = 'Sending...';
 
+   const serviceID = 'default_service';
+   const templateID = 'template_4ew7tdh';
 
-function sendMail(contactForm) {
-    emailjs.send("service_9ecyqwe","rosie", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value
-    })
-      .then(
-        function(response) {
-            console.log("SUCCESS", response);
-        },
-        function(error) {
-            console.log("FAILED", error);
-        }
-    );
-    
-    return false;  // To block from loading a new page
-    
-}
-
-
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
