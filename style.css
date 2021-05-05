@@ -6,7 +6,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'DM Sans', sans-serif;
-    background: url('johny-goerend-XWWKKdG4Arg-unsplash.jpg'); 
+    background: url('assets/media/backdrops/body-background1.jpg'); 
     background-attachment: fixed;
     background-size: cover;
     
@@ -31,7 +31,7 @@ body {
 /*--------------------------------landing page---------------------*/
 
 .hero-image {
-    background: url(assets/media/surf1.jpg);
+    background: url(assets/media/backdrops/main-hero.jpg);
     height: 92vh;
     background-position: center bottom;
     background-size: cover;
@@ -138,13 +138,8 @@ h6 {
     margin-bottom: 10px;
   }
   
-  .field label {
-    display: block;
-    font-size: 12px;
-    color: #777;
-  }
-  
-  .field input {
+    
+  .field * {
     display: block;
     min-width: 250px;
     line-height: 1.5;
