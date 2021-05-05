@@ -9,6 +9,7 @@ body {
     background: url('assets/media/backdrops/body-background1.jpg'); 
     background-attachment: fixed;
     background-size: cover;
+    background-position: top;
     
 }
   
@@ -57,16 +58,13 @@ body {
 }
 
 .hero-text p {
-    font-weight: lighter ;
+    font-weight: 500 ;
 }
 
 /*--------------------------------map sections---------------------*/
 
 .map-landing {
     cursor: pointer;
-    
-
-
 }
 
 #map {
@@ -74,7 +72,6 @@ body {
     min-width: 300px;
     margin-top: 10px;
     border-radius: 8px;
-
 }
 
 .map-content {
@@ -83,11 +80,13 @@ body {
     border: 0.1rem solid black;
     border-radius: 8px;
     line-height: 1.1;
+    background: rgba(231, 231, 231, 0.3);
+    color: #222;
+    
 }
 
 .beach-images {
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .beach-images img {
@@ -104,7 +103,6 @@ h6 {
     text-align: center;
     text-transform: uppercase;
     padding-top: 5px;
-
 }
 
 .map-content p {
@@ -123,7 +121,8 @@ h6 {
 .surf-partners img {
     width: 120px;
     height: 120px;
-    padding: 2px;
+    margin: 6px;
+    background-color: white;
 }
 
 .surf-partners-wide img {
@@ -134,25 +133,56 @@ h6 {
 
 /*--------------------------------contact---------------------*/
 
+.contact-top {
+    text-align: center;
+    padding-top: 25%;
+}
+
+.contact-top p {
+    font-size: 18px;
+    min-width: 250px;
+    color: #1a1a1a;
+}
+
+#form input[type="text"],
+#form textarea {
+    background-color: transparent;
+    color: #6b6b6b;
+    border: 2px solid #4a4a4a;
+    border-radius: 5px;
+}
+
 .field {
     margin-bottom: 10px;
   }
-  
-    
+     
   .field * {
     display: block;
+    margin: 0 auto;
     min-width: 250px;
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 14px;  
+    
   }
   
   input[type="submit"] {
     display: block;
+    margin:0 auto;
     padding: 6px 30px;
     font-size: 14px;
-    background-color: #4460AA;
-    color: #fff;
-    border: none
+    background-color: rgba(114,188,195, 0.7);
+    color: #111;
+   
+    
+  }
+
+  .button:hover {
+    background-color: rgba(114,188,195, 1);
+  }
+
+  .contact-button {
+      padding-top: 10px;
+
   }
 
 /*--------------------------------Footer---------------------*/
@@ -202,3 +232,5 @@ h6 {
     background: #125688;
     color: white;
 }
+
+
