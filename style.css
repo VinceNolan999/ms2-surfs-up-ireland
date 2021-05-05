@@ -126,6 +126,14 @@ h6 {
 
 /*--------------------------------contact---------------------*/
 
+.contact-image {
+    background: url('assets/media/backdrops/contack-background.jpg');
+    height: 90vh; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .contact-top {
     text-align: center;
     padding-top: 25%;
@@ -143,6 +151,7 @@ h6 {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 8px;
+    margin: 0 auto;
 }
 
 #form input[type="text"],
@@ -255,7 +264,37 @@ input[type="submit"] {
 }
 
 @media only screen and (min-width: 415px) {
+    .hero-text p {
+        padding-top: 25px;
+        margin: 0 auto;
+        max-width: 250px;
+        justify-content: center;
+        font-size: larger;
+    }
+
+    .map-content {
+        height: 70vh;
+        padding-top: 10px;    
+    }
+
+    .surf-partners img {
+        width: 90px;
+        height: 90px;
+        
+    }
     
+    .surf-partners-wide img {
+        width: 140px;
+        height: 90px;   
+    }
+
+    .field * {
+        min-width: 350px;
+    }
+
+    .main-form {
+        max-width: 400px;
+    }
     
 }
 
@@ -291,16 +330,21 @@ input[type="submit"] {
         width: 60%;
     }
 
- .surf-partners-main {
+    .surf-partners-main {
      min-height: 30vh;
      padding-top: 5vh;
- }
+    }
 
- .contact-top {
-     padding-top: 10%;
+    .contact-top {
+     padding-top: 5%;
      }
 
-    
-}
+     .field * {
+         min-width: 500px;
+     }
 
-  
+     .main-form {
+         max-width: 600px;
+     }
+} 
+

@@ -124,13 +124,11 @@
 
     <!---------------Contact page-------------->
     <section>
-        <div id="contact-page"
-            style="background: url('assets/media/backdrops/contack-background.jpg'); height: 90vh; background-position: center;
-             background-size: cover; background-repeat: no-repeat;">
+        <div class="contact-image" id="contact-page">
             <div class="contact-top">
                 <p>We would love to hear from you!</p>
             </div>
-            <div class="main-form mx-auto">
+            <div class="main-form">
                 <form id="form">
                     <div class="field">
                         <input type="text" name="from_fname" id="from_fname" placeholder="First Name" required />
@@ -142,7 +140,7 @@
                         <input type="text" name="from_email" id="from_email" placeholder="Email" required />
                     </div>
                     <div class="field">
-                        <textarea rows="6" name="message" id="message" placeholder="Message" required>Message</textarea>
+                        <textarea class="text-area" rows="6" name="message" id="message" placeholder="Message" required>Message</textarea>
                     </div>
                     <div class="contact-button">
                         <input class="button" type="submit" id="button" value="Send Email">
