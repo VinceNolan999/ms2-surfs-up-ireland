@@ -244,7 +244,6 @@ input[type="submit"] {
 /*-------------------media Query ----------------*/
 
 
-
 @media only screen and (max-width: 374px) {
     .surf-partners img {
         width: 95px;
@@ -272,8 +271,13 @@ input[type="submit"] {
         font-size: larger;
     }
 
+    #map {
+        height: 60vh;
+    }
+
+
     .map-content {
-        height: 70vh;
+        height: 60vh;
         padding-top: 10px;    
     }
 
@@ -288,6 +292,11 @@ input[type="submit"] {
         height: 90px;   
     }
 
+    .surf-partners-main {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+       }
+
     .field * {
         min-width: 350px;
     }
@@ -298,7 +307,56 @@ input[type="submit"] {
     
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 530px) {
+    
+    #map {
+        height: 80vh;
+        min-width: 250px;
+    }
+
+    .map-content {
+        height: 80vh;
+        padding-left: 5px;  
+        padding-right: 5px;
+        margin: 10px 10px 0 0;
+        font-size: smaller;
+      
+    }
+
+
+    .surf-partners img {
+        width: 50px;
+        height: 50px;
+        
+    }
+    
+    .surf-partners-wide img {
+        width: 70px;
+        height: 50px;   
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .map-content {
+        font-size: 1.3rem;
+    }
+
+    .surf-partners img {
+        width: 90px;
+        height: 90px;
+        
+    }
+    
+    .surf-partners-wide img {
+        width: 140px;
+        height: 90px;   
+    }
+}
+
+@media only screen and (min-width: 1024px) {
 
     .hero-image {
         background-position: bottom center ;
@@ -313,6 +371,10 @@ input[type="submit"] {
         margin: 0 auto;
         max-width: 250px;
         justify-content: center;
+    }
+
+    #map {
+        height: 70vh;
     }
 
     .map-content {
@@ -335,6 +397,17 @@ input[type="submit"] {
      padding-top: 5vh;
     }
 
+    .surf-partners img {
+        width: 150px;
+        height: 150px;
+        
+    }
+    
+    .surf-partners-wide img {
+        width: 220px;
+        height: 150px;   
+    }
+
     .contact-top {
      padding-top: 5%;
      }
@@ -346,5 +419,14 @@ input[type="submit"] {
      .main-form {
          max-width: 600px;
      }
-} 
 
+     .footer-bg {
+        background-color: #ecaf9c;
+    } 
+}
+
+@media only screen and (min-width: 1024px) {
+    .map-content {
+        font-size: 1rem;
+    }
+}
