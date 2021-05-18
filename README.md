@@ -1,18 +1,18 @@
 python3 -m http.server
 
-# Nicola - A Singers Website
+# Surfs Up Ireland
 
 ## <u>Screenshots</u>
 
-![screenshot](assets/docs/ms1-screenshot.JPG)
+![screenshot](assets/docs/ms1-screenshot.JPG) 
 
-### [Link to Live Github hosted website](https://vincenolan999.github.io/ms1-nicola/)
+### [Link to Live Github hosted website](https://vincenolan999.github.io/ms2-surfs-up-ireland/)
 
 ## A User-Centric Frontend Milestone Project
 
-- This is my first Milestone project with Code Institute and my first ever web design.
-I decided to create a website for a family member who is a singer along the lines of a suggested project withing the course (Build a website for a band).
-The aim of the project is give my niece web presence for potential employers and show-case her abilities to fans and potential employers.
+- This is my second Milestone project with Code Institute which introduces interactivity into the website by using Javascript.
+The project I choose was an Interactive website of Surf locations along the Irish coast which has selectable locations from Google maps.
+Also included in the site, a fully functioning Contact section for a user to send a comment/message. 
 
 ---
 ## <u>Table of Contents</u>
@@ -43,7 +43,7 @@ The aim of the project is give my niece web presence for potential employers and
   
  #### New user Goals
 
-- Be able to find out more about Nicola.
+- Be able to find out more about Nicola
 
 - Be able to see pictures of Nicola.
 
