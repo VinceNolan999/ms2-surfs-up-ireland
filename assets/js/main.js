@@ -2,7 +2,11 @@
 // https://webdesign.tutsplus.com/tutorials/smooth-scrolling-vanilla-javascript--cms-35165  
 
 //------------------Smooth Scrolling---------------------//
-
+jQuery.event.special.touchstart = {
+  setup: function( _, ns, handle ) {
+      this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+  }
+};
 
 const links = document.querySelectorAll(".page-header ul a");
  
@@ -25,3 +29,5 @@ e.preventDefault();
 $('.nav-link').on('click',function() {
   $('.navbar-collapse').collapse('hide');
 });
+
+

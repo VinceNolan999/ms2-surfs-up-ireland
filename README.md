@@ -385,14 +385,14 @@ changing 'Hamburger' Menu color
 
 ### Acknowledgments
 
-- Code Institute README and template from mentor Adee Adeye utilized to meet expected criteria.  
+- README adapted from My MS1 project
 
 - Code Institute Pre-loaded github tools
 
 - [Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw) - Youtube hosted Front end tutorials.
 
-- Credit: https://www.geeksforgeeks.org on how to change hamburger menu color
+- https://www.flaticon.com/free-icons/surfboard -  free favicons.
 
-- I was inspired by the website of [Erin Wall](http://www.erinwall.com/) which really drew my attention to its structure and layout
+- 
  
 [Back to Table of contents](#table-of-contents)

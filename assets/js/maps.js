@@ -2,6 +2,7 @@
 
 //https://fruitbatm.github.io/explore-national-parks-of-japan/   
 
+
 let map;
 
 function initMap() {
@@ -282,6 +283,7 @@ function initMap() {
           marker.open = false;
         });
       });
+      
 
       //  Zoom into marker
       google.maps.event.addListener(marker, 'click', function () {
