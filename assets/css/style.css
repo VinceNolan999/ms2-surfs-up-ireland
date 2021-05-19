@@ -160,12 +160,18 @@ h6 {
 }
 
 #form input[type="text"],
+#form input[type="email"],
 #form textarea {
     background-color: transparent;
     color: #111111;
     border: 2px solid #5c5c5c;
     border-radius: 8px;
     padding-left: 2px;
+}
+
+#form input:focus,
+#form textarea:focus {
+    background-color: rgba(147, 248, 255, 0.664);
 }
 
 .field {

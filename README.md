@@ -125,7 +125,7 @@ Home page, Gallery and Contact page.
 
 #### Hero Image
 
-- Full size image of the singer that is responsive to device size
+- Good quality Image of a person surfing trelavant to the website theme
 
 #### about-me section
 
