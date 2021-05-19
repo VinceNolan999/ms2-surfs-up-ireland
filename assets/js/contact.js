@@ -22,8 +22,8 @@ document.getElementById('form')
 });
 
 function clearForm() {
-  document.getElementByID('from_fname').value = '';
-  document.getElementByID('from_lname').value = '';
-  document.getElementByID('from_email').value = '';
-  document.getElementByID('message').value = '';
+  document.getElementById('from_fname').value = '';
+  document.getElementById('from_lname').value = '';
+  document.getElementById('from_email').value = '';
+  document.getElementById('message').value = '';
 }
