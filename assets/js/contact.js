@@ -1,19 +1,21 @@
-function sendMail(contactForm) {
-    emailjs.send("default_service","template_4ew7tdh", {
-        "from_fname": contactForm.from_fname.value,
-        "from_lname": contactForm.from_lname.value,
-        "from_email": contactForm.from_email.value,
-        "message": contactForm.message.value
-    })
-      .then(
-        function(response) {
-            console.log("SUCCESS", response);
-        },
-        function(error) {
-            console.log("FAILED", error);
-        }
-    );
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_4ew7tdh';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {      
+      btn.value = 'Send Email';
+      alert('Sent!');
+      }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
     
-    return false;  // To block from loading a new page
-    
-}
+});

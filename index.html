@@ -66,11 +66,13 @@
     </section>
 
     <!---------------Map section /locations-------------->
-    <section id="map-page" class="map-landing ">
+    <section id="map-page" class="map-landing">
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
-                    <div id="map"></div>
+                <div class="col">                   
+                    <div id="map">
+                        <p>Select A Marker</p>
+                    </div>
                 </div>
 
                 <div id="map-content" class="col map-content">
@@ -128,7 +130,7 @@
                 <p>We would love to hear from you!</p>
             </div>
             <div class="main-form">
-                <form id="form" onsubmit="return sendMail (this);">
+                <form id="form">
                     <div class="field">
                         <input type="text" name="from_fname" id="from_fname" placeholder="First Name" required />
                     </div>
@@ -136,7 +138,7 @@
                         <input type="text" name="from_lname" id="from_lname" placeholder="Last Name" required />
                     </div>
                     <div class="field">
-                        <input type="text" name="from_email" id="from_email" placeholder="Email" required />
+                        <input type="email" name="from_email" id="from_email" placeholder="Email" required />
                     </div>
                     <div class="field">
                         <textarea class="text-area" rows="6" name="message" id="message" placeholder="Message" required></textarea>

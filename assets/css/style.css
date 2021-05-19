@@ -69,6 +69,11 @@ body {
     border-radius: 8px;
 }
 
+.map-landing p {
+    text-align: center;
+    
+}
+
 .map-content {
     margin: 10px 15px 10px 15px;
     padding: 30px;
