@@ -12,6 +12,7 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {      
       btn.value = 'Send Email';
+      clearForm();
       alert('Sent!');
       }, (err) => {
       btn.value = 'Send Email';
@@ -19,3 +20,10 @@ document.getElementById('form')
     });
     
 });
+
+function clearForm() {
+  document.getElementByID('from_fname').value = '';
+  document.getElementByID('from_lname').value = '';
+  document.getElementByID('from_email').value = '';
+  document.getElementByID('message').value = '';
+}
