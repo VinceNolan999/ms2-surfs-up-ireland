@@ -4,7 +4,7 @@ python3 -m http.server
 
 ## <u>Screenshots</u>
 
-![screenshot](assets/docs/ms2-preview.JPG) 
+![screenshot](assets/media/docs/ms2-preveiw.png) 
 
 ### [Link to Live Github hosted website](https://vincenolan999.github.io/ms2-surfs-up-ireland/)
 
@@ -95,7 +95,7 @@ Also included in the site, a fully functioning Contact section for a user to sen
 - I used Balsamic to create wireframe mwock ups of ho I envisioned the website to look.
 These are listed below.
 
-- ![wireframes](assets/docs/ms2wireframe.png) 
+- ![wireframes](assets/media/docs/ms2wireframe.png) 
 
 ---
 ## <u>Features</u>
