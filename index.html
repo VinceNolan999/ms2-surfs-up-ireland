@@ -15,7 +15,7 @@
 
     <title>Surfs Up Ireland</title>
     <link rel="shortcut icon" type="image/jpg" href="assets/media/icons8-surf-50.png">
-    
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
@@ -69,9 +69,13 @@
     <section id="map-page" class="map-landing">
         <div class="container-fluid">
             <div class="row">
-                <div class="col">                   
+                <div class="col" id="marker-info">
+                    <p>Select A Marker to Display Information</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
                     <div id="map">
-                        <p>Select A Marker</p>
                     </div>
                 </div>
 
@@ -141,10 +145,11 @@
                         <input type="email" name="from_email" id="from_email" placeholder="Email" required />
                     </div>
                     <div class="field">
-                        <textarea class="text-area" rows="6" name="message" id="message" placeholder="Message" required></textarea>
+                        <textarea class="text-area" rows="6" name="message" id="message" placeholder="Message"
+                            required></textarea>
                     </div>
                     <div class="contact-button">
-                        <input class="button" type="submit" id="button" value="Send Email" >
+                        <input class="button" type="submit" id="button" value="Send Email">
                     </div>
                 </form>
             </div>
@@ -180,10 +185,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbgCecfOgNaXFlfL2FEn4GY0nBcd_2Yfs&callback=initMap"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbgCecfOgNaXFlfL2FEn4GY0nBcd_2Yfs&callback=initMap">
+    </script>
     <script src="assets/js/maps.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/contact.js"></script>
 
 </body>
+
 </html>

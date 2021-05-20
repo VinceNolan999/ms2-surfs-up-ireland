@@ -1,7 +1,4 @@
-//Add Google Maps
-
-//https://fruitbatm.github.io/explore-national-parks-of-japan/   
-
+//Add Google Maps //https://fruitbatm.github.io/explore-national-parks-of-japan/   
 
 let map;
 
@@ -12,7 +9,7 @@ function initMap() {
       lng: -7.94
     },
     zoom: 7,
-    scrollwheel:true
+    scrollwheel: true
   });
 
   //Map locations
@@ -248,14 +245,11 @@ function initMap() {
     }, // www.wlrfm.com
   ];
 
-
   //Loop through locations 
   for (var i = 0; i < locations.length; i++) {
     addMarker(locations[i]);
   }
-
   // Marker function
-
   function addMarker(props) {
     const marker = new google.maps.Marker({
       position: props.coordinates,
@@ -265,7 +259,6 @@ function initMap() {
       const infowindow = new google.maps.InfoWindow({
         content: props.content
       });
-
       // Open info window when clicked on the marker
       google.maps.event.addListener(marker, 'click', function () {
         if (!marker.open) {
@@ -283,17 +276,13 @@ function initMap() {
           marker.open = false;
         });
       });
-      
-
       //  Zoom into marker
       google.maps.event.addListener(marker, 'click', function () {
         map.setZoom(10);
         map.setCenter(marker.getPosition());
       });
-
       // Info shows in the side column when the marker is clicked
       google.maps.event.addListener(marker, 'click', (function (i) {
-
         return function () {
           document.getElementById('map-content').innerHTML = locations[i].info;
         };
@@ -301,11 +290,8 @@ function initMap() {
     }
   }
 }
-
 //test image zoom
 $(document).ready(function () {
   $('#kb > img').addClass('zoom');
 });
-
-
 // credit thebeachguide.co.uk for the beach descriptions. images from pinterest and no obvious copyright google image searches

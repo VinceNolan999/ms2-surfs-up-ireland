@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Scope+One&display=swap');
 
-
 body {
     height: 100%;
     padding: 0;
@@ -11,7 +10,6 @@ body {
     background-size: cover;
     background-position: top;
 }
-
 
 /*--------------------------------nav bar---------------------*/
 .navbar {
@@ -28,7 +26,6 @@ body {
 }
 
 /*--------------------------------landing page---------------------*/
-
 .hero-image {
     background: url('../media/backdrops/main-hero.jpg');
     height: 92vh;
@@ -39,25 +36,28 @@ body {
 }
 
 .hero-text {
-    margin: 0 auto;
-    width: 60%;
-    text-align: center;
+    position: relative;
     padding-top: 5%;
+    margin: 0 auto;
 }
 
 .hero-text h1 {
     font-family: 'Scope One';
     font-size: 300%;
-    padding-top: 5%;
     text-transform: capitalize;
+    position: absolute;
+    left: 10%;
+    line-height: 90%;
 }
 
 .hero-text p {
     font-weight: 500;
+    position: absolute;
+    left: 10%;
+    top: 15vh;
 }
 
 /*--------------------------------map sections---------------------*/
-
 .map-landing {
     cursor: pointer;
 }
@@ -65,17 +65,21 @@ body {
 #map {
     height: 70vh;
     min-width: 300px;
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 8px;
 }
 
 .map-landing p {
     text-align: center;
-    
+    margin: 0;
+}
+
+#marker-info p {
+    font-size: 0.8rem;
 }
 
 .map-content {
-    margin: 10px 15px 10px 15px;
+    margin: 5px 15px 10px 15px;
     padding: 30px;
     border: 0.1rem solid black;
     border-radius: 8px;
@@ -105,11 +109,12 @@ h6 {
 
 .map-content p {
     text-align: center;
+    padding: 10px;
 }
 
-.map-content ul {
-
+.map-content-features li {
     text-transform: capitalize;
+    position: relative;
 }
 
 .surf-partners-main {
@@ -129,11 +134,10 @@ h6 {
     margin: 5px;
 }
 
-/*--------------------------------contact---------------------*/
-
+/*--------------------------------contact section--------------------*/
 .contact-image {
     background: url('../media/backdrops/contack-background.jpg');
-    height: 90vh; 
+    height: 90vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -184,7 +188,6 @@ h6 {
     min-width: 250px;
     line-height: 1.5;
     font-size: 14px;
-    
 }
 
 input[type="submit"] {
@@ -214,7 +217,6 @@ input[type="submit"] {
 }
 
 .fab {
-
     padding: 7px 12px;
     font-size: 20px;
     text-align: center;
@@ -250,11 +252,7 @@ input[type="submit"] {
     background: #125688;
     color: white;
 }
-
-
-/*-------------------media Query ----------------*/
-
-
+/*-------------------media query section ----------------*/
 @media only screen and (max-width: 374px) {
     .surf-partners img {
         width: 95px;
@@ -266,11 +264,11 @@ input[type="submit"] {
         height: 100px;
     }
 
-  .footer-icons {
-    left: -1px;
-    padding: 0;
-    margin: 0 auto;
-  }
+    .footer-icons {
+        left: -1px;
+        padding: 0;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (min-width: 415px) {
@@ -289,24 +287,23 @@ input[type="submit"] {
 
     .map-content {
         height: 60vh;
-        padding-top: 10px;    
+        padding-top: 10px;
     }
 
     .surf-partners img {
         width: 90px;
         height: 90px;
-        
     }
-    
+
     .surf-partners-wide img {
         width: 140px;
-        height: 90px;   
+        height: 90px;
     }
 
     .surf-partners-main {
         padding-top: 5vh;
         padding-bottom: 5vh;
-       }
+    }
 
     .field * {
         min-width: 350px;
@@ -315,11 +312,9 @@ input[type="submit"] {
     .main-form {
         max-width: 400px;
     }
-    
 }
 
 @media only screen and (min-width: 530px) {
-    
     #map {
         height: 80vh;
         min-width: 250px;
@@ -327,30 +322,23 @@ input[type="submit"] {
 
     .map-content {
         height: 80vh;
-        padding-left: 5px;  
+        padding-left: 5px;
         padding-right: 5px;
-        margin: 10px 10px 0 0;
+        margin: 5px 10px 0 0;
         font-size: smaller;
-      
     }
-
 
     .surf-partners img {
         width: 50px;
         height: 50px;
-        
     }
-    
+
     .surf-partners-wide img {
         width: 70px;
-        height: 50px;   
+        height: 50px;
     }
-
-
 }
-
 @media only screen and (min-width: 768px) {
-
     .map-content {
         font-size: 1.1rem;
     }
@@ -358,21 +346,19 @@ input[type="submit"] {
     .surf-partners img {
         width: 90px;
         height: 90px;
-        
     }
-    
+
     .surf-partners-wide img {
         width: 140px;
-        height: 90px;   
+        height: 90px;
     }
 }
 
 @media only screen and (min-width: 1024px) {
-
     .hero-image {
-        background-position: bottom center ;
+        background-position: bottom center;
     }
-            
+
     .hero-text h1 {
         padding: 0;
     }
@@ -391,12 +377,10 @@ input[type="submit"] {
     .map-content {
         height: 70vh;
         padding-top: 10px;
-        
     }
 
     .map-content p {
-        padding: 5px 15px 0px 15px;
-        
+        padding: 5px 15px 5px 15px;
     }
 
     .beach-images img {
@@ -404,37 +388,39 @@ input[type="submit"] {
     }
 
     .surf-partners-main {
-     min-height: 30vh;
-     padding-top: 5vh;
+        min-height: 30vh;
+        padding-top: 5vh;
     }
 
     .surf-partners img {
         width: 150px;
         height: 150px;
-        
     }
-    
+
     .surf-partners-wide img {
         width: 220px;
-        height: 150px;   
+        height: 150px;
     }
 
     .contact-top {
-     padding-top: 5%;
-     }
+        padding-top: 5%;
+    }
 
-     .field * {
-         min-width: 500px;
-     }
+    .field * {
+        min-width: 500px;
+    }
 
-     .main-form {
-         max-width: 600px;
-     }
-
+    .main-form {
+        max-width: 600px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     .map-content {
         font-size: 1rem;
+    }
+
+    .map-content-features li {
+        left: 30%;
     }
 }
