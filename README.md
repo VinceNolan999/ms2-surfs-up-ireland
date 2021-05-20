@@ -4,7 +4,7 @@ python3 -m http.server
 
 ## <u>Screenshots</u>
 
-![screenshot](assets/docs/ms1-screenshot.JPG) 
+![screenshot](assets/docs/ms2-preview.JPG) 
 
 ### [Link to Live Github hosted website](https://vincenolan999.github.io/ms2-surfs-up-ireland/)
 
@@ -92,78 +92,65 @@ Also included in the site, a fully functioning Contact section for a user to sen
 
 ### Wireframes
 
-- I used Balsamic to create wireframe mock ups of how I envisioned the website to look.
-These are listed below
+- I used Balsamic to create wireframe mwock ups of ho I envisioned the website to look.
+These are listed below.
 
-- ![wireframes](assets/docs/ms1-wireframe.png) 
+- ![wireframes](assets/docs/ms2wireframe.png) 
 
 ---
 ## <u>Features</u>
 
-- As this is a new project the website will consist of 3 pages with view to increase as necessary (see features left to implement below.)
-Home page, Gallery and Contact page.
+- This website will consist of 1 main page of three sections. The sections will be a landing section with full page hero image of a surfer, the next section is the main content which features google maps that has selectable markers that then displays location images and information.  Finally the last section is a fully functioning contact section hosted by emailjs. 
 
 #### Fonts
 
-- The main font used is 'Kodchasan' with back-up of  sans-serif  obtained from [Google-fonts](www.fonts.google.com)
+- The main font used is 'DM sans' with back-up of  sans-serif  obtained from [Google-fonts](www.fonts.google.com)
 
 #### Images
 
-- Most Images are sourced direct from the singers social media.  In time these can be replaced with higher quality images.  The cover picture was created by the singer.
+- The main background images have all been obtained from [unsplash](www.unsplash.com) used for images as well. see [#credits](#credits)
 
-- [unsplash](www.unsplash.com) used for images as well. see [#credits](#credits)
+- The images of the locations were obtained by google search and from Pinterest.  There were no obvious copyright restrictions.
 
 #### Navbar and footer
 
-- Both have same styling and colors for consistency. This is reflected across all pages of the website.
+- low profile navigation bar and footer with a color sceme that reflects the website.
 
 - Navbar located at top with 'Brand' to the left and a responsive menu on the right. For Mobile and tablet this is 
-  an expanding 'Hamburger' menu opening below the icon to reveal the three pages (Home, Gallery and Contact).
-  On desktop the 'hamburger'  is replaced with links for the 3 pages.  
+  an expanding 'Hamburger' menu opening below the icon to reveal the three pages (Home, locations and Contact).
 
 - Footer is located at the bottom and contains Social media links.
 
 #### Hero Image
 
-- Good quality Image of a person surfing trelavant to the website theme
+- High quality Image of a person surfing relavant to the website theme
 
-#### about-me section
+#### Location and Map section
 
-- A brief bio of Nicola
-
-#### Upcoming events.
-
-- A gallery with Nicola's upcoming performances, including dates, time and location.
-
-#### Gallery Page
-
-- Fixed tile gallery of images relating to Nicola. Responsive effect when hovering over the pictures. 
+- Interactive googlemaps with custom markers. Zoom to function and scrollwheel enable for smooth transitions.   Selecting a marker on the map will change the display of the location section which has a short description of the beach, a relevant image and then useful information in regards to surfing.
 
 #### Contact Page
 
--  Contains a form for fans, prospective employers  or other performers to send messages to Nicola.
+-  Fully functioning contact form,  this could be for users to suggest other irish surf sites or to collaborate on other projects.
 
- 
 ### Existing Features
 
-- Content form allows for a message to be sent to the site owner.  This could be for prospective employers to make contact to hire Nicola , other singers/bands wishing to collaborate
-or Fans to ask questions.
+- Smooth scrolling enabled from hamburger menu which makes for a cleaner visual experience. 
+
+- Interactive map section that can change location information that is being displayed. 
+
+- Fully functional contact section which uses focus to change background color to enable higher contrast in text input.  Contact section confirms success on sending a mail 
+  and then resets the form. 
 
 #### Future Features 
 
-- Fully functioning Play/stop button in the header.  
+- expansion of Surfing sites in ireland.
 
-- Gallery pictures currently enlarges on hover. Plan to add a large pop-out carousel of the images when clicked on.
+- upto date weather and 'swell' incorporated into the location display.
 
-- a Separate Video/ music page. 
+- Create a brand for other countries  (eg. Surfs Up Australia etc).
 
-- Merchandise page 
-
-- incorporate a press kit/review section into the website by either a new page or addition to existing.
-
-- A News blog which links to recent performances or live stream events as well as other relevant news.
-
-- Higher quality and relevant Images when they become available.
+- merchandise section relevant to surfing.
 
 [Back to Table of contents](#table-of-contents)
 
@@ -176,6 +163,10 @@ or Fans to ask questions.
 * [CSS](https://en.wikipedia.org/wiki/CSS) 
 
   - Style sheet language
+
+* [JS](https://www.javascript.com/)
+
+  - Used to create interactive funcionality
 
 * [Google Fonts:](https://fonts.google.com/)
 
@@ -285,31 +276,7 @@ and a Motorola  one+ mobile phone with no issues noted.
 
 ### Issues found during development
 
-- Fixed Navbar caused content go underneath. After trying margins and padding's on the divs and sections to solve this to 
-no avail I found that using padding-top on the body tag pushed content lower and solved the issue. This led to other issues where 
-I then made the navbar a fixed height which caused no background to be displayed on the drop down menu. This was fixed 
-by changing to min-height for navbar and therefore making sizing of the navbar predictable and easier.
-
-- Initially had a carousel to display the event section, this caused some issues where the page seems to be flicking when the image changed.
-This feature didn't look particularly good so was removed with advice from the mentor.  
-
-- gallery images - adding container- fluid solved issue with borders on left and right. 
-
-- gallery image display. column sizes changed for better layout. xl-3 added for full screen viewing. md-3 changed to 4 which is better for i-pad pro. scaling of images better.
-They were becoming squashed as too many items being displayed.  I have set media queries for different view sizes to keep them at the intended sizes.
-
-- The contact page had a minor display issue when viewing on small mobile devices. When the contents were moved into block form
-the background was showing where it should be the contents box.  Issue resolved by adding 5px to the padding-right.
-
-- The contact page display was having issues with tablet displays. White space present at the bottom due to height of display. Scaled well on mobile/desktop. 
-setting vh-100 solved this however then caused issue with the block element overlapping low height display. 
-Finally settled on including a min-height of 790px which fixed the height issues.
-
-- The Navbar had a particularly annoying issue that was limited to I pad devices where 1px Grey horizontal lines were visible in the footer section of all pages
-and also in-between the event heading and event images.  This was solved for me by moving the ' h4 - Upcoming events' onto the top of the box container for 
-the events section.  Prior to this it was nested above in its own Div that closed at start of the event images. This coincidentally stopped
-all the Grey lines including them in the footer.
-
+- 
 
 ### Performance testing
 
@@ -336,20 +303,20 @@ My project was developed on Gitpod with regular commits during development to Gi
 
 To deploy my project in github I took the following steps.
 
-- Login and Select the repository in github. ([ms1-nicola](https://github.com/VinceNolan999/ms1-nicola))
+- Login and Select the repository in github. ([ms2-surfs-up-ireland](https://github.com/VinceNolan999/ms2-surfs-up-ireland))
 - Click on the settings button
 - locate the Github pages section.
 - select 'save' and then refresh or an auto refresh
-- Displayed at top of Github pages - Your site is published at https://vincenolan999.github.io/ms1-nicola/
+- Displayed at top of Github pages - Your site is published at https://vincenolan999.github.io/ms2-surfs-up-ireland/
 
 To Deploy locally.
-- Login and Select the repository in github. [ms1-nicola](https://github.com/VinceNolan999/ms1-nicola)
+- Login and Select the repository in github. [ms2-surfs-up-ireland](https://github.com/VinceNolan999/ms2-surfs-up-ireland)
 - go-to 'code' and  'download zip'
 - locate the ZIP file, unpack and deploy into your local environment.
 
 Alternatively you can [Clone](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 or [Fork](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
-this repository ([ms1-nicola](https://github.com/VinceNolan999/ms1-nicola)) into your github account.
+this repository ([ms2-surfs-up-ireland](https://github.com/VinceNolan999/ms2-surfs-up-ireland)) into your github account.
 
 [Back to Table of contents](#table-of-contents)
 
@@ -362,8 +329,11 @@ this repository ([ms1-nicola](https://github.com/VinceNolan999/ms1-nicola)) into
 
 * [w3schools.com](https://www.w3schools.com)
 
-* [geeksforgeeks](https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/) -
-changing 'Hamburger' Menu color 
+* [Smooth scrolling](https://webdesign.tutsplus.com/tutorials/smooth-scrolling-vanilla-javascript--cms-35165) 
+
+* [emailjs](https://www.emailjs.com/)
+
+* [Googlemaps-Developers](https://developers.google.com/maps)
 
 ### Code Templates
 
@@ -373,15 +343,19 @@ changing 'Hamburger' Menu color
 
 ### Content
 
-- Bio/about me. Created by Nicola and edited by myself.  
+- The Location descriptions were obtained from https://www.thebeachguide.co.uk.
 
 ### Media
 
-- Images provided by Nicola
+- location images obtained from google search on the locations which had no obvious restrictions
 
-- Clickplay photos. Dagenhams got talent. Nicola and Rebecca
+- [Unsplash](https://www.unsplash.com) - background photos 
 
-- [Unsplash](https://www.unsplash.com) - photo 12 in gallery - Photo by Robert Vergeson on Unsplash
+  - landing page  -  ben-selway-vWc2Xu_FkvQ-unsplash
+
+  - paralax image -  pat-whelen-a_yZlR4_IkQ-unsplash
+
+  - Contact page  -  zachary-shea-MAFUZ8Nh7XQ-unsplash                                      
 
 ### Acknowledgments
 
@@ -389,10 +363,8 @@ changing 'Hamburger' Menu color
 
 - Code Institute Pre-loaded github tools
 
-- [Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw) - Youtube hosted Front end tutorials.
-
 - https://www.flaticon.com/free-icons/surfboard -  free favicons.
 
-- 
+- https://fruitbatm.github.io/explore-national-parks-of-japan/ -  Credit due as the googlemaps interactive marker Java code fit in which my design ideas.
  
 [Back to Table of contents](#table-of-contents)
