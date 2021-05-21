@@ -1,4 +1,3 @@
-// https://webdesign.tutsplus.com/tutorials/smooth-scrolling-vanilla-javascript--cms-35165  
 //------------------Smooth Scrolling---------------------//
 jQuery.event.special.touchstart = {
   setup: function( _, ns, handle ) {
