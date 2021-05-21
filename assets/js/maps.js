@@ -1,4 +1,4 @@
-//Add Google Maps //https://fruitbatm.github.io/explore-national-parks-of-japan/   
+//Google Maps  
 
 let map;
 
@@ -170,7 +170,7 @@ function initMap() {
               <li>surf difficulty - novice</li>
               <li>surf break - beach</li>
           </ul>`
-    }, //  pinterest
+    }, 
 
     {
       coordinates: {
@@ -195,7 +195,7 @@ function initMap() {
               <li>surf difficulty - novice</li>
               <li>surf break - beach</li>
           </ul>`
-    }, //booking.com
+    }, 
 
     {
       coordinates: {
@@ -242,7 +242,7 @@ function initMap() {
               <li>surf difficulty - novice</li>
               <li>surf break - beach</li>
           </ul>`
-    }, // www.wlrfm.com
+    }, 
   ];
 
   //Loop through locations 
@@ -260,7 +260,7 @@ function initMap() {
         content: props.content
       });
       // Open info window when clicked on the marker
-      google.maps.event.addListener(marker, 'click', function () {
+      google.maps.event.addListener(marker, 'click', {passive: true}, function () {
         if (!marker.open) {
           infowindow.open(map, marker);
           marker.open = true;
@@ -271,18 +271,18 @@ function initMap() {
           marker.open = false;
         }
         // Close info window when clicked anywhere on the map and the info window was opened
-        google.maps.event.addListener(map, 'click', function () {
+        google.maps.event.addListener(map, 'click', {passive: true}, function () {
           infowindow.close();
           marker.open = false;
         });
       });
       //  Zoom into marker
-      google.maps.event.addListener(marker, 'click', function () {
+      google.maps.event.addListener(marker, 'click', {passive: true}, function () {
         map.setZoom(10);
         map.setCenter(marker.getPosition());
       });
       // Info shows in the side column when the marker is clicked
-      google.maps.event.addListener(marker, 'click', (function (i) {
+      google.maps.event.addListener(marker, 'click', {passive: true}, (function (i) {
         return function () {
           document.getElementById('map-content').innerHTML = locations[i].info;
         };
@@ -294,4 +294,3 @@ function initMap() {
 $(document).ready(function () {
   $('#kb > img').addClass('zoom');
 });
-// credit thebeachguide.co.uk for the beach descriptions. images from pinterest and no obvious copyright google image searches
