@@ -1,24 +1,21 @@
-python3 -m http.server
-
 # Surfs Up Ireland
+
+### [Link to Live Github hosted website](https://vincenolan999.github.io/ms2-surfs-up-ireland/)
 
 ## <u>Screenshots</u>
 
 ![screenshot](assets/media/docs/ms2-preveiw.png) 
 
-### [Link to Live Github hosted website](https://vincenolan999.github.io/ms2-surfs-up-ireland/)
-
 ## A User-Centric Frontend Milestone Project
 
-- This is my second Milestone project with Code Institute which introduces interactivity into the website by using Javascript.
+- This is my Second Milestone Project with Code Institute which introduces interactivity into the website by using Javascript.
 The project I choose was an Interactive website of Surf locations along the Irish coast which has selectable locations from Google maps.
 Also included in the site, a fully functioning Contact section for a user to send a comment/message. 
 
 ---
 ## <u>Table of Contents</u>
-
+- [Screenshots](#screenshots)
 - [UX](#ux)
-    - [Website owner business goals](#website-owner-business-goals)
     - [User goals](#user-goals)
     - [User stories](#user-stories)
     - [Structure of the website](#structure-of-the-website)
@@ -34,7 +31,6 @@ Also included in the site, a fully functioning Contact section for a user to sen
     - [Performance testing](#performance-testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
-- [Screenshots](#screenshots)
  
  ---
 ## <u>UX</u>
@@ -87,7 +83,7 @@ Also included in the site, a fully functioning Contact section for a user to sen
 
 - I want the website to be easily accessible, simple to navigate and user friendly. It must also be displayed 
   for various devices (desktop ,Tablet, Mobile Phone) whilst maintaining a great user experience . Links within the website directing me to other Pages either within
-  this website or to other social media accounts (youtube etc). I would like to have effects like hover to bring the website alive and encourages interaction.
+  this website or to other social media accounts (youtube etc). 
 
 
 ### Wireframes
@@ -201,43 +197,43 @@ These are listed below.
 ---
 ## <u>Testing</u>
 
- - Navbar
-    - Clicking on the links from each page takes you to the correct location. 
-    In addition the correct link is highlighted as the active page.
-    - On gallery and Navbar clicking 'Nicola' brand takes to main page.
-    - drop down menu works correctly on each page.
+- Navbar
+    - Clicking on the menu links takes you to the desired section.
+    - navbar brank link disabled
+    - hamburger menu appears at relevant view width and drop down menu works crorrectly
 
-- Footer 
-    - Clicking Facebook takes you to Facebook.com in a new tab
-    - Clicking Facebook takes you to twitter.com in a new tab
-    - Clicking Facebook takes you to youtube.com in a new tab
-    - Clicking Facebook takes you to instagram.com in a new tab
-        - Checked for all pages.
+- Map and Location Section 
 
-- Upcoming Events.
+    - Googlemaps responsive, markers are shown and when pressed the information section including image is changed (all markers checked and correct)
 
-   - Hovering over images transitions them larger with no visible issues.
+- partner links
 
-- Gallery
-    - All images have transition effect on hover with no obvious issues. Number of columns changes 
-    depending on virtual device used.
-
+    - all 5 links tested and redirect to a new tab of the correct website
+  
 - Contact Page.
-    - testing revealed missing 'required' and also contact form not acting as expected. Bootsnipp template contact form
-    did not start with the 'form' heading and was not displaying the 'please fill in this field' for the input boxes as a result. 
-    This has been fixed.
-
-    - test: left first name blank.  pressed submit, box red outline  around all boxes and 'please fill in field'.
-    - test: left first name entered.   pressed submit, red outline in empty boxes and 'please fill in field' shown in last name.
-    - test: invalid email entered. Requested valid email and red outline.
-    - test: valid email entered and works as expected.
-    - test: all inputs completed except comment box.  red outline on comments and 'please fill in field' shown.
-    - test: all fields completed correctly.  Upon submit the entry's act as thou they are sent and form resets.
+    
+    - each input box hightlights light blues as intended  (helps with contrast)
+    - fill in field warning for input boxes present if left blank.
+    - fill in field with email address correctly displayed
+    - fill in field for textarea.
+    - Form completed with correct details to test reciept of message.
+         - send email button wording changes to 'sending'
+         - sent! alert box appears requiring a click on ok. (correct)
+         - 'sending' button returns to 'send email'
+         - contact from is reset.
+         - Emails is recieved from Emailjs, this confirms contact form working as intended.
+         
+- Footer 
+    - Clicking the footer icons takes you to the correct website opened in a new tab.
 
 ### Functionality testing
 
-- Mozilla Browser used to run Gitpod and developer tools used to test , solve problems, style and responsiveness.
-Chrome developer tools used to check compatibility during project and to check on consistency of Mozilla dev tools.
+- chrome Browser used to run Gitpod and developer tools used to test , solve problems, style and responsiveness.
+Chrome developer tools used to check compatibility during project and to check on consistency.
+
+- Mozilla Dev tools used to test in addtion to chrome dev tools.    
+
+- No issues detected.
 
 ### Compatibility testing
 
@@ -246,6 +242,8 @@ issues seen on either. A wide range of screen sizes tested from mobile, tablet a
 
 - I have tested compatibility on the github pages published website of the project on a 1920 x 1080 monitor, a galaxy s7 
 and a Motorola  one+ mobile phone with no issues noted.
+
+- The website was submitted for peer review and no Issues were recorded by thous viewing.
 
 ### Code Validation
 -  https://jigsaw.w3.org/css-validator/   
@@ -329,17 +327,17 @@ this repository ([ms2-surfs-up-ireland](https://github.com/VinceNolan999/ms2-sur
 
 * [w3schools.com](https://www.w3schools.com)
 
-* [Smooth scrolling](https://webdesign.tutsplus.com/tutorials/smooth-scrolling-vanilla-javascript--cms-35165) 
-
-* [emailjs](https://www.emailjs.com/)
-
 * [Googlemaps-Developers](https://developers.google.com/maps)
 
 ### Code Templates
 
 - Navbar - [Bootstrap](https://getbootstrap.com/docs/4.6/components/navbar/)   
-- gallery grid and Event grid - [Startbootstrap](https://startbootstrap.com/snippets/thumbnail-gallery)  
+
 - Contact form -[Bootsnip](https://bootsnipp.com/snippets/qr1zR) 
+
+- [Smooth scrolling](https://webdesign.tutsplus.com/tutorials/smooth-scrolling-vanilla-javascript--cms-35165) 
+
+- [emailjs](https://www.emailjs.com/)
 
 ### Content
 
@@ -349,7 +347,7 @@ this repository ([ms2-surfs-up-ireland](https://github.com/VinceNolan999/ms2-sur
 
 - location images obtained from google search on the locations which had no obvious restrictions
 
-- [Unsplash](https://www.unsplash.com) - background photos 
+- [Unsplash](https://www.unsplash.com) - background images 
 
   - landing page  -  ben-selway-vWc2Xu_FkvQ-unsplash
 
