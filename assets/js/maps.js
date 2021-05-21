@@ -260,7 +260,7 @@ function initMap() {
         content: props.content
       });
       // Open info window when clicked on the marker
-      google.maps.event.addListener(marker, 'click', {passive: true}, function () {
+      google.maps.event.addListener(marker, 'click', function () {
         if (!marker.open) {
           infowindow.open(map, marker);
           marker.open = true;
@@ -271,18 +271,18 @@ function initMap() {
           marker.open = false;
         }
         // Close info window when clicked anywhere on the map and the info window was opened
-        google.maps.event.addListener(map, 'click', {passive: true}, function () {
+        google.maps.event.addListener(map, 'click', function () {
           infowindow.close();
           marker.open = false;
         });
       });
       //  Zoom into marker
-      google.maps.event.addListener(marker, 'click', {passive: true}, function () {
+      google.maps.event.addListener(marker, 'click', function () {
         map.setZoom(10);
         map.setCenter(marker.getPosition());
       });
       // Info shows in the side column when the marker is clicked
-      google.maps.event.addListener(marker, 'click', {passive: true}, (function (i) {
+      google.maps.event.addListener(marker, 'click', (function (i) {
         return function () {
           document.getElementById('map-content').innerHTML = locations[i].info;
         };
