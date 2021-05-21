@@ -247,7 +247,7 @@ and a Motorola  one+ mobile phone with no issues noted.
 
 ### Code Validation
 -  https://jigsaw.w3.org/css-validator/   
-    - passed with no errors found. This document validates as CSS level 3 + null !
+    - 2 errors found, however these were in the bootstrap cdn. This document validates as CSS level 3 + null 
 -  https://validator.w3.org/
     - all pages checked with no issues. 
 -  https://wave.webaim.org/ - A web accessibility checker

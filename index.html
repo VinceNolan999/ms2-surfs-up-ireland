@@ -10,8 +10,9 @@
     <meta name="author" content="Vincent Nolan">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-    <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Scope+One&display=swap" rel="stylesheet">
 
     <title>Surfs Up Ireland</title>
     <link rel="shortcut icon" type="image/jpg" href="assets/media/icons8-surf-50.png">
@@ -23,8 +24,8 @@
     <!--------------navbar------------------->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-custom">
-            <a class="navbar-brand" href="#"><img src="assets/media/surf brand.png" alt="logo" width="40px"
-                    height="40px"><span>The Irish Surf Guide</span></a>
+            <a class="navbar-brand" href="#"><img src="assets/media/surf brand.png" alt="logo" width="40px" height="40px">
+                <span>The Irish Surf Guide</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +33,7 @@
             <div class="collapse navbar-collapse page-header" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item ml-auto active">
-                        <a class="nav-link" href="#hero-page">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#hero-page">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ml-auto">
                         <a class="nav-link" href="#map-page">Locations</a>
@@ -80,7 +81,9 @@
                         the full force of the swells. As a result Lahinch is one of Ireland’s most popular surfing
                         beaches.
                     </p>
-                    <div class="beach-images"><img src="assets/media/beach images/lahinch.jpg" alt="beach"></div>
+                    <div class="beach-images">
+                        <img src="assets/media/beach images/lahinch.jpg" alt="beach">
+                    </div>
                     <h6>information</h6>
                     <ul class="map-content-features">
                         <li>beach rating - good</li>
@@ -130,17 +133,20 @@
             <div class="main-form">
                 <form id="form">
                     <div class="field">
+                        <label class="sr-only" for="from_fname">First Name</label>
                         <input type="text" name="from_fname" id="from_fname" placeholder="First Name" required />
                     </div>
                     <div class="field">
+                        <label class="sr-only" for="from_lname">Last Name</label>
                         <input type="text" name="from_lname" id="from_lname" placeholder="Last Name" required />
                     </div>
                     <div class="field">
+                        <label class="sr-only" for="from_email">Email address</label>
                         <input type="email" name="from_email" id="from_email" placeholder="Email" required />
                     </div>
                     <div class="field">
-                        <textarea class="text-area" rows="6" name="message" id="message" placeholder="Message"
-                            required></textarea>
+                        <label class="sr-only" for="message">Leave message</label>
+                        <textarea class="text-area" rows="6" name="message" id="message" placeholder="Message" required></textarea>
                     </div>
                     <div class="contact-button">
                         <input class="button" type="submit" id="button" value="Send Email">
