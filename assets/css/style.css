@@ -414,13 +414,3 @@ input[type="submit"] {
         max-width: 600px;
     }
 }
-
-@media only screen and (min-width: 1024px) {
-    .map-content {
-        font-size: 1rem;
-    }
-
-    .map-content-features li {
-        left: 30%;
-    }
-}
