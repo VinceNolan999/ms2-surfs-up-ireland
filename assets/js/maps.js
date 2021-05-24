@@ -49,7 +49,7 @@ function initMap() {
       months. Surfing is also popular here, and there is a surf club located on the beach. The beach is 
       renowned for its spectacular sunsets..</p>
           
-          <div class="beach-images"><img src="assets/media/beach images/Enniscrone.jpg" alt="beach"></div>
+          <div class="beach-images"><img src="assets/media/beach images/Enniscrone.jpg" alt="inishcrone beach"></div>
            <h6>information</h6>                   
           <ul class="map-content-features">
               <li>beach rating  - good</li>
@@ -72,7 +72,7 @@ function initMap() {
           the full force of the swells. As a result Lahinch is one of Ireland’s most popular surfing
           beaches.</p>
           
-          <div class="beach-images"><img src="assets/media/beach images/lahinch.jpg" alt="beach"></div>
+          <div class="beach-images"><img src="assets/media/beach images/lahinch.jpg" alt="lahinch beach"></div>
            <h6>information</h6>                   
           <ul class="map-content-features">
               <li>beach rating  - good</li>
@@ -95,13 +95,13 @@ function initMap() {
       for surfing, with a number of surf schools operating in the area and equipment available
       for hire.During the summer months there is a lifeguard service here </p>
           
-          <div class="beach-images"><img src="assets/media/beach images/spanish-point-beach.jpg" alt="picture of a beach"></div>
+          <div class="beach-images"><img src="assets/media/beach images/spanish-point-beach.jpg" alt="spanish point beach"></div>
            <h6>information</h6>                   
           <ul class="map-content-features">
               <li>beach rating  - good</li>
-              <li>surf school - yes, multiple</li>
+              <li>surf school - no</li>
               <li>life guard - yes, seasonal</li>
-              <li>surf difficulty - novice</li>
+              <li>surf difficulty - intermediate</li>
               <li>surf break - beach</li>
           </ul>`
     },
@@ -117,13 +117,13 @@ function initMap() {
       The beach can pick up an impressive amount of swell and is popular with surfers,
        swimming here is dangerous due to the strong offshore currents.</p>
           
-          <div class="beach-images"><img src="assets/media/beach images/doughmore.jpg" alt="picture of a beach"></div>
+          <div class="beach-images"><img src="assets/media/beach images/doughmore.jpg" alt="Doughmore beach"></div>
            <h6>information</h6>                   
           <ul class="map-content-features">
-              <li>beach rating  - good</li>
-              <li>surf school - yes, multiple</li>
-              <li>life guard - yes, seasonal</li>
-              <li>surf difficulty - novice</li>
+              <li>beach rating  - Excellent</li>
+              <li>surf school - No</li>
+              <li>life guard - No</li>
+              <li>surf difficulty - hard</li>
               <li>surf break - beach</li>
           </ul>`
     },
@@ -139,7 +139,7 @@ function initMap() {
         It is about 6 miles long in its entirety and stretches from the hamlet of Fahamore (complete with a bar) 
         along to Fermoyle Strand. It forms part of a protected Special Area of Conservation.</p>
           
-          <div class="beach-images"><img src="assets/media/beach images/castelgregory.jpg" alt="picture of a beach"></div>
+          <div class="beach-images"><img src="assets/media/beach images/castelgregory.jpg" alt="castlegregory beach"></div>
            <h6>information</h6>                   
           <ul class="map-content-features">
               <li>beach rating  - good</li>
@@ -161,7 +161,7 @@ function initMap() {
        across the entire south-west side of the Inch Peninsula.  There is a surfing school directly on the beach and the place 
        is popular with surfers and other water-sports enthusiasts.</p>
           
-          <div class="beach-images"><img src="assets/media/beach images/inchstrand.jpg" alt="picture of a beach"></div>
+          <div class="beach-images"><img src="assets/media/beach images/inchstrand.jpg" alt="inch strand beach"></div>
            <h6>information</h6>                   
           <ul class="map-content-features">
               <li>beach rating  - good</li>
@@ -186,7 +186,7 @@ function initMap() {
        The swell here can be excellent and there are good opportunities for surfing. 
         A surf school operates on the beach, which caters for all levels of ability.</p>
           
-          <div class="beach-images"><img src="assets/media/beach images/inchydoney.jpg" alt="picture of a beach"></div>
+          <div class="beach-images"><img src="assets/media/beach images/inchydoney.jpg" alt="inchydoney beach"></div>
            <h6>information</h6>                   
           <ul class="map-content-features">
               <li>beach rating  - good</li>
@@ -209,7 +209,7 @@ function initMap() {
        With a ramp down to the beach Garrettstown is also accessible. This is one of the most popular surfing beaches
         in the area and is home to a surf school.</p>
           
-          <div class="beach-images"><img src="assets/media/beach images/garretstown.jpg" alt="picture of a beach"></div>
+          <div class="beach-images"><img src="assets/media/beach images/garretstown.jpg" alt="garretstown beach"></div>
            <h6>information</h6>                   
           <ul class="map-content-features">
               <li>beach rating  - good</li>
@@ -233,7 +233,7 @@ function initMap() {
       Tramore does draw a crowd from nearby Waterford City but there is always plenty 
       of room to spread out on this spacious beach.</p>
           
-          <div class="beach-images"><img src="assets/media/beach images/tramorestrand_large.jpg" alt="picture of a beach"></div>
+          <div class="beach-images"><img src="assets/media/beach images/tramorestrand_large.jpg" alt="tranmore beach"></div>
            <h6>information</h6>                   
           <ul class="map-content-features">
               <li>beach rating  - good</li>
