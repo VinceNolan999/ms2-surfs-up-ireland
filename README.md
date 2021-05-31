@@ -243,7 +243,7 @@ Chrome developer tools used to check compatibility during project and to check o
 
 ### Compatibility testing
 
-- I have tested the website on the virtual devices contained with the Dev Tools of Mozilla and Chrome with no 
+- I have tested the website on the virtual devices (including landscape orientation) contained with the Dev Tools of Mozilla and Chrome with no 
 issues seen on either. A wide range of screen sizes tested from mobile, tablet and desktop.
 
 - I have tested compatibility on the github pages published website of the project on a 1920 x 1080 monitor, a galaxy s7 
@@ -305,6 +305,8 @@ and a Motorola  one+ mobile phone with no issues noted
 -  Photos and Information not sizing correctly when the screen size changed. This has been corrected by custom Media query's for the common display breakpoints from small mobile devices to Personal computers.  I was unable to reset the form without causing other issues to present, finally advice from my mentor advised to call a function to reset the fields.
 
 Whilst testing an error became apparent with screen width, and the parallax background stretch too far to the right.  Eventually located this issue in a media query font size for the partners icons.  Another presumed accidental code alteration occurred while attempting to increase the performance gains in lighthouse. This caused too many un necessary commits to be made and attempted rollbacks to previous shah number was needed and the issue was resolved. The issue being the marker selector no longer worked. This was not helped as I had API restriction on for the map only to be displayed via github pages and not in the Gitpod test browser. 
+
+Another Issue I found late on was with mobile devices viewing in landscape. Information boxes and contact form would over spill into other sections, This was due to small screen height.  This has been addressed with a Media query (orientation : landscape) place just prior to desktop viewing size and some minor changes to that media query as well (reverting height back as intended.)  Problem address and solved.
 
 ### Performance testing
 

@@ -354,6 +354,35 @@ input[type="submit"] {
     }
 }
 
+@media only screen and (orientation: landscape) {
+
+    .hero-image {
+        height: 92vh;
+    }
+
+    #map {
+        height: 140vh;
+        min-width: 250px;
+    }
+
+    .map-content {
+        height: 140vh;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 5px 10px 0 0;
+        font-size: smaller;
+    }
+
+    .contact-image {
+        height: 160vh;
+    }
+
+    .footer-bg {
+        height: 15vh;  
+    }
+
+}
+
 @media only screen and (min-width: 1024px) {
     .hero-image {
         background-position: bottom center;
@@ -377,6 +406,7 @@ input[type="submit"] {
     .map-content {
         height: 70vh;
         padding-top: 10px;
+        font-size: 1rem;
     }
 
     .map-content p {
@@ -393,17 +423,21 @@ input[type="submit"] {
     }
 
     .surf-partners img {
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
     }
 
     .surf-partners-wide img {
         width: 220px;
-        height: 150px;
+        height: 130px;
     }
 
     .contact-top {
         padding-top: 5%;
+    }
+
+    .contact-image {
+        height: 90vh;
     }
 
     .field * {
@@ -413,10 +447,11 @@ input[type="submit"] {
     .main-form {
         max-width: 600px;
     }
-}
 
-@media only screen and (min-width: 1024px) {
-    .map-content {
-        font-size: 1rem;
+    .footer-bg {
+        height: 10vh;  
     }
 }
+
+
+
