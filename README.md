@@ -45,8 +45,7 @@ Also included in the site, a fully functioning Contact section for a user to sen
 
 - Have Links available for organization's in regards to surfing, including beach safety, water safety amongst others.
 
-- A comment/message section that allows messages to be sent. The purpose expected to be recommendations for Surf locations, Information requests about surfing and 
-  other surfing related companies wishing to collaborate
+- A comment/message section that allows for messages to be sent. I may want to leave recommendations for Surf locations, ask Information  about surfing in Ireland.
 
 #### Returning User Goals
 
@@ -92,7 +91,7 @@ Also included in the site, a fully functioning Contact section for a user to sen
 
 ### Wireframes
 
-- I used Balsamic to create wireframe mock ups of ho I envisioned the website to look.
+- I used Balsamic to create wireframe mock ups of how I envisioned the website to look.
 These are listed below.
 
 - ![wireframes](assets/media/docs/ms2wireframe.png) 
@@ -294,8 +293,8 @@ and a Motorola  one+ mobile phone with no issues noted
 - I want to see what beaches are close to my location.
   - I can quickly check the maps section in the website and can see the closest surf location from my location.
 
-- I want to be able to leave suggestions for other locations and leave reviews on thous I have visited.
-  - A contact section is present for me to message the website and leave any information in the form of a message.
+- I want to be able to leave suggestions for other locations and leave reviews for beaches that I have visited.
+  - A contact form is present for me to send a message to the website owner. 
 
 - I want to be able to see quicklinks to other surfing sites, this can be for safety, surfing conditions,  water safety etc.
   - there are several links below the map section that has useful websites for Surfing.
